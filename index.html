@@ -9,8 +9,36 @@
     <title>Etch-a-Sketch</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <h1 class="title">Etch-a-Sketch</h1>
+    </header>
+    <main>
+      <div id="style-selections">
+        <select name="colors" class="colors">
+          <option value="black">Black</option>
+          <option value="blue">Blue</option>
+          <option value="red">Red</option>
+          <option value="rainbow">Rainbow</option>
+          <option value="grayscale">Grayscale</option>
+        </select>
+        <select name="grid-size" class="grid-size">
+          <option value="16">16x16</option>
+          <option value="36">36x36</option>
+          <option value="48">48x48</option>
+          <option value="60">60x60</option>
+          <option value="72">72x72</option>
+          <option value="86">86x86</option>
+          <option value="100">100x100</option>
+        </select>
+        <button id="eraser">Eraser</button>
+        <button id="grid">Grid</button>
+      </div>
+      <div id="board"></div>
+      <div id="actions">
+        <button id="reset">Reset</button>
+        <button id="save">Save</button>
+      </div>
+    </main>
     <footer>
       <p class="copy">&copy; Zan Zirbel 2022</p>
     </footer>
