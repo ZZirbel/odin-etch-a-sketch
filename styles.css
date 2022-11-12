@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+}
+
+#style-selections {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    max-width: 800px;
+    width: 550px;
+    height: 550px;
+    max-height: 800px;
+    border: 1px solid black;
+    align-self: center;
+    margin: 10px auto;
+}
+
+#actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.copy {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    max-width: 100vw;
+}
