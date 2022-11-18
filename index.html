@@ -14,22 +14,28 @@
     </header>
     <main>
       <div id="style-selections">
-        <select name="colors" class="colors">
-          <option value="black">Black</option>
-          <option value="blue">Blue</option>
-          <option value="red">Red</option>
-          <option value="rainbow">Rainbow</option>
-          <option value="grayscale">Grayscale</option>
-        </select>
-        <select name="grid-size" class="grid-size">
-          <option value="16">16x16</option>
-          <option value="36">36x36</option>
-          <option value="48">48x48</option>
-          <option value="60">60x60</option>
-          <option value="72">72x72</option>
-          <option value="86">86x86</option>
-          <option value="100">100x100</option>
-        </select>
+        <div class="style-container">
+          <label class="grid-label" for="grid-size"
+            >Grid Size: <span id="grid-dimensions"></span
+          ></label>
+          <input
+            type="range"
+            name="grid-size"
+            id="grid-slider"
+            min="16 x 16"
+            max="100 x 100"
+          />
+        </div>
+        <div class="style-container">
+          <label for="colors" class="colors-label">Select a Color:</label>
+          <select name="colors" class="colors">
+            <option value="black">Black</option>
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="rainbow">Rainbow</option>
+            <option value="grayscale">Grayscale</option>
+          </select>
+        </div>
         <button id="eraser">Eraser</button>
         <button id="grid">Grid</button>
       </div>

@@ -30,11 +30,21 @@ main {
     align-items: center;
 }
 
+.style-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#eraser, #grid {
+    align-self: flex-end;
+}
+
 #board {
-    max-width: 800px;
+    max-width: 550px;
     width: 550px;
     height: 550px;
-    max-height: 800px;
+    max-height: 550px;
     border: 1px solid black;
     align-self: center;
     margin: 10px auto;
