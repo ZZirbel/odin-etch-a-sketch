@@ -50,6 +50,12 @@ main {
     margin: 10px auto;
 }
 
+.grid-square {
+    margin: 0;
+    padding: 0;
+    border: 1px dotted black;
+}
+
 #actions {
     display: flex;
     flex-direction: row;
