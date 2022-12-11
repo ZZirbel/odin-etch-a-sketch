@@ -13,9 +13,12 @@ gridSize.addEventListener("input", addGridSize);
 const createDivs = function (value) {
   let board = document.querySelector("#board");
   for (let i = 0; i < value; i++) {
-    let row = document.createElement("div");
-    row.className = "grid-row";
-    row.style.setProperty("height", `calc(${board.clientHeight} / ${value})`);
+    let column = document.createElement("div");
+    column.className = "grid-column";
+    column.style.setProperty(
+      "height",
+      `calc(${board.clientHeight} / ${value})`
+    );
     for (let j = 1; j <= value; j++) {
       let square = document.createElement("div");
       square.className = "grid-square";
@@ -23,9 +26,9 @@ const createDivs = function (value) {
         "width",
         `calc(${board.clientWidth} / ${value})`
       );
-      row.appendChild(square);
+      column.appendChild(square);
     }
-    board.appendChild(row);
+    board.appendChild(column);
   }
 };
 
